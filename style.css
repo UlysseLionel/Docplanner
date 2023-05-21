@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700|Work+Sans:300,400,500,600,700&display=swap); /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav img{
+    width: 250px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content:right;
+}
+#sectiontop h1{
+    color: #00bfa5;
+    font-size: 0,2rem;
+}
