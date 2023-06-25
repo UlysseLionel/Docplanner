@@ -1,26 +1,241 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700|Work+Sans:300,400,500,600,700&display=swap); /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-    font-family: sans-serif;
-    font-size: 16px;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+
+:root{
+    --grey: #747474;
+    --aqua: #00b39b;
+    --blue: #3d83df;
+    --dark-blue: #1b2734;
+
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-nav img{
+body{
+    font-family:Roboto;
+    font-size: 16px;
+    color: var(--grey);
+    margin:20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+img{
+    max-width: 100%;
+}
+.flex{
+    display: flex;
+}
+.center{
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    justify-content: space-between;
+    }
+#logo {
     width: 250px;
 }
-nav ul{
+ul{
     list-style: none;
-    display: flex;
-    gap: 40px;
-    justify-content:right;
+    gap: 20px;
 }
-#sectiontop h1{
-    color: #00bfa5;
-    font-size: 0,2rem;
+#topsection{
+    gap: 2rem;
+    margin-top: 3rem;
+}
+#topsection>div{
+    gap: 0.5rem;
+    margin-top: 1rem;
+    line-height: 2;
+}
+#topsection h1{
+    color: var(--aqua);
+    font-family: Work sans,Arial,sans-serif;
+    font-weight: 300;
+    font-size:2em;
+}
+#cards{
+    flex-wrap: wrap;
+    color: white;
+    gap: 15px;
+}
+#cards>div{
+    flex: 30%;
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 2rem;
+   
+}
+#patients{
+    background-color: #00ccb1;
+    font-family: Work sans,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 1,2;
+}
+#patients>div{
+    margin-bottom: 30px;
+}
+#doctors{
+    background-color: #3d83df;
+    font-family: Work sans,Arial,sans-serif;
+    font-weight: 300;
+}
+#doctors>div{
+    margin-bottom: 30px;
+}
+#clinics{
+    background-color: var(--dark-blue);
+    font-family: Work sans,Arial,sans-serif;
+    font-weight: 300;
+}
+#clinics>div{
+    margin-bottom: 30px;
+}
+#links{
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+#links h2{
+    color: var(--aqua);
+    font-family: Work sans,Arial,sans-serif;
+    font-weight: 300;
+    font-size:2em;
+    justify-content: left;
+}
+#links ul{
+   flex-wrap: wrap;
+   align-content: flex-start;
+   justify-content: space-between;
+}
+
+#links img{
+    width: 130px;
+    height: 35px;
+}
+#inter{
+    flex-direction: column;
+    align-items: center;
+}
+#destinations{
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom: 5em;
+}
+#statistic{
+    background-color: rgb(229, 250, 248);
+    padding: 2em;
+    width: 100%;
+}
+#statistic h1{
+        color: var(--aqua);
+        font-family: Work sans,Arial,sans-serif;
+        font-weight: 300;
+        font-size:2em;
+        margin-bottom: 10px;
+}
+
+.descr{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#test{
+    background-color: white;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+#inter{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#inter p{
+    line-height: 2;
+    margin-top: 3rem;
+    width: 500px;
+   text-align: center;
+   font-weight: 300;
+}
+
+#inter h1{
+    color: var(--aqua);
+    font-family: Work sans,Arial,sans-serif;
+    font-weight: 300;
+    font-size:2em;
+}
+#destinations img{
+    width: 300px;
+}
+#destinations>div>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+#destinations button{
+    background-color: var(--blue);
+    padding: 10px;
+    width: 120px;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: var(--blue);
+color: #ffffff;
+cursor: pointer;
+
+}
+#destinations>div{
+background-color: #fbfbfb;
+border-radius: 15px;
+max-width: 100%;
+}
+#join h1{
+    font-family: Work sans,Arial,sans-serif;
+    font-weight: 300;
+    font-size:2em;
+    padding: 15px;
+    color: var(--dark-blue);
+}
+#join button{
+    background-color: var(--blue);
+    padding: 10px;
+    width: 250px;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: var(--blue);
+color: #ffffff;
+cursor: pointer
+}
+hr{
+    margin-top: 10em;
+    margin-bottom: 2em;
+}
+footer a{
+    text-decoration: none;
+}
+footer div{
+    margin-top: 10px;
+}
+footer{
+    font-size: 12px;
+    font-weight: 300;
+    margin: 2em;
 }
